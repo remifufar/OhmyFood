@@ -1,0 +1,40 @@
+.fonction{
+
+        counter-reset: numero;
+    & ol{
+        display: flex;
+        flex-direction:column;
+         
+        row-gap: 25px;
+        padding-left: 15px;
+        position: relative;
+
+    }
+    & li{
+        &::before{
+            content: counter(numero);
+            counter-increment: numero;
+            
+            padding: 2px 7px;
+            border-radius: 12px;
+            color: white;
+            background-color: #9356DC;
+            position:absolute;
+            left: 5px;
+        }
+        background-color: #f6f6f6;
+        padding: 18px 27px;
+        @include box-shadow;
+        &:hover{
+        
+        & i {
+        color: #9356DC;}
+        }
+        border-radius: 15px;
+    }
+
+    & i{
+        margin-right: 15px;
+       
+    }
+}
