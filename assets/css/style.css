@@ -141,6 +141,25 @@ main .localisation {
       top: 8px;
       right: 17px; }
 
+footer {
+  background-color: #353535;
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column; }
+  footer h3 {
+    font-family: "Shrikhand",cursive; }
+  footer ul {
+    padding: 0; }
+  footer li {
+    padding-bottom: 5px;
+    font-size: 16px; }
+  footer i {
+    margin-right: 5px; }
+
 /**utils**/
 
 /*# sourceMappingURL=style.css.map */
