@@ -1,0 +1,81 @@
+.menus{
+    background-color: #f6f6f6;
+    margin: 0%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 65px;
+    padding-top: 20px;
+
+    & h2{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    &__cards{
+     
+     display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+     .new{
+        
+        position: relative;
+
+    }
+     .new::before{
+        content:"Nouveau" ;
+        position: absolute;
+        padding: 10px 15px;
+        background-color: #99e2d0;
+        color: #278870;
+        font-weight: 500;
+        border-radius: 5px;
+        right: 12px;
+        top: 12px;
+
+    }
+        @media ( min-width: 700px){
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+        
+    }
+}
+.card {
+        border-radius: 15px;
+        box-shadow: 0px 1px 5px 0px #000;
+        & img{
+            border-radius: 15px 15px 0 0;
+            object-fit:cover;
+            object-position: center;
+            width: 100%;
+            height: 180px;
+        }
+        &__description{
+          display: flex;
+          justify-content:space-between;
+        position: relative;
+          &__text{
+            h3{
+                padding-left: 15px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            p{
+                padding-left: 15px;
+                padding-bottom: 15px;
+
+            }
+          }
+          &__coeur{
+            position: absolute;
+            font-size: 25px;
+            top: 8px;
+            right: 17px;
+            
+
+          }
+
+    }
+    }

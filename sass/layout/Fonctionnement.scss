@@ -1,6 +1,7 @@
 .fonction{
-
+        padding: 0px 15px;
         counter-reset: numero;
+        
     & ol{
         display: flex;
         flex-direction:column;
