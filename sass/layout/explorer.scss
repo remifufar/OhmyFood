@@ -4,16 +4,19 @@
 .Explorer
 {
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
     &--btn
     {
         background: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%);
         border:none;
         color:white;
-        padding: 10px 15px;
+        padding: 15px 21px;
         border-radius: 25px;
         font-size: 16px;
         @include box-shadow;
-        margin-top: 10px;
+        margin-top: 25px;
     }   
     &--btn:hover{
         @include zoom;

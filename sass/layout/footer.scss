@@ -1,3 +1,6 @@
+@import "../utils/shadow.scss";
+
+
 footer{
 background-color: #353535;
 color: white;
@@ -7,8 +10,10 @@ padding-left: 30px;
 display: flex;
 justify-content: flex-start;
 flex-direction: column;
+ @include mobile-test;
        & h3{
         font-family: "Shrikhand",cursive;
+        
 
        }
 
@@ -21,6 +26,9 @@ flex-direction: column;
         font-size: 16px ;
        }
        & i{
-        margin-right: 5px;
+        margin-right: 5px; 
+        
+       
        }
-}
+      
+}      

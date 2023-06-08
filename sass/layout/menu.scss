@@ -8,7 +8,7 @@
 
     & h2{
         font-size: 24px;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
 
     &__cards{
@@ -73,7 +73,14 @@
             font-size: 25px;
             top: 8px;
             right: 17px;
-            
+                &:hover{
+                    transform: scale(1.15);
+                    background: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%);
+                    transition: transform 650ms,background-color 650ms;
+                    &::after{
+                        opacity: 2;
+                    }
+                }
 
           }
 

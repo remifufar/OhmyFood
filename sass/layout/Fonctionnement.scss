@@ -1,7 +1,10 @@
 .fonction{
-        padding: 0px 15px;
+        padding: 25px 15px;
         counter-reset: numero;
-        
+    & h2{
+
+        margin-bottom: 30px;
+    }
     & ol{
         display: flex;
         flex-direction:column;
@@ -25,7 +28,7 @@
         }
         background-color: #f6f6f6;
         padding: 18px 27px;
-        @include box-shadow;
+    
         &:hover{
         
         & i {
@@ -35,7 +38,7 @@
     }
 
     & i{
-        margin-right: 15px;
+        margin-right: 12px;
        
     }
 }
