@@ -197,7 +197,8 @@ footer {
   .menu__entree {
     margin-left: 17px; }
     .menu__entree h3 {
-      position: relative; }
+      position: relative;
+      padding-bottom: 30px; }
       .menu__entree h3::after {
         content: "";
         position: absolute;
@@ -206,6 +207,20 @@ footer {
         top: 25px;
         left: 1px;
         background-color: #99E2D0; }
+
+.carte {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden; }
+  .carte h4, .carte p {
+    margin: 0px; }
+  .carte__check {
+    background-color: #99E2D0;
+    margin-right: -42px; }
+  .carte:hover .carte__check {
+    margin-right: 0;
+    transition: all 0.5s; }
 
 /**utils**/
 
