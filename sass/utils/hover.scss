@@ -1,6 +1,9 @@
 @mixin zoom{
-    transform: scale(1.10);
-    transition-property: transform;
-        transition-duration: 500ms;
-        opacity: 0.9;
+    
+
+        
+        box-shadow: 5px 5px 5px #000;
+        opacity: 0.7;
+        background: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%);
+        cursor: pointer;
 }
