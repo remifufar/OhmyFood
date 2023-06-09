@@ -141,17 +141,22 @@ main .localisation {
     .card__description__text p {
       padding-left: 15px;
       padding-bottom: 15px; }
-    .card__description__coeur {
+    .card__description i {
       position: absolute;
       font-size: 25px;
       top: 8px;
       right: 17px; }
-      .card__description__coeur:hover {
-        transform: scale(1.15);
-        background: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%);
-        transition: transform 650ms,background-color 650ms; }
-        .card__description__coeur:hover::after {
-          opacity: 2; }
+      .card__description i.coeur-2 {
+        opacity: 0;
+        background-clip: text;
+        -webkit-background-clip: text;
+        transition: 0.3s ease-in-out;
+        color: transparent;
+        background-image: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%); }
+      .card__description i.coeur-2:hover {
+        cursor: grab;
+        opacity: 1;
+        transform: scale(1.2); }
 
 footer {
   background-color: #353535;
