@@ -1,3 +1,117 @@
-$breakpoint: (
-    mobile: 500px
+$breakpoints:
+(
+    "tablet": 768px,
+    "desktop": 1065px,
 );
+
+@mixin tablet 
+{
+    @media screen and (min-width: map-get($breakpoints, "tablet")) {
+        @content;
+    }
+}
+
+@mixin desktop
+{
+    @media screen and (min-width: map-get($breakpoints, "desktop")) {
+        @content;
+    } 
+}
+
+/****page d'accueil desktop and tablet responsive****///
+/****header***/
+
+
+/**réservé**/
+@include desktop{
+    
+    header{
+    position:unset;
+
+    }
+   
+.Explorer
+{
+     padding-bottom: 30px;
+
+        h2
+    {
+            font-size: 40px ;
+            margin-top: 0;
+            margin-bottom: 25px;
+    }
+        p 
+    {
+        font-weight: 200;
+    }
+
+}
+.fonction{
+    margin: 0px 105px;
+
+    h2{
+        font-size: 24px;
+
+    }
+    ol{
+        padding: 0;
+        display:flex;
+        flex-direction: row;
+        gap: 18px;
+    }
+    li{
+        padding: 25px 30px;
+        width: 33%;
+        position: relative;
+        &::before{
+            position: absolute;
+            left:-8px;
+
+        }
+        
+
+    }
+
+}
+.menus{
+        padding-bottom: 30px;
+    h2{
+        margin-left: 105px;
+    }
+    &__cards{
+        margin: 0px 105px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card{
+        width: 45%;
+        
+
+
+    }
+
+}
+
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    h3{
+        margin: 0 50px;
+
+    }
+    ul{
+        display: flex;
+        gap: 15px;
+
+        }
+
+}
+
+
+
+}
+

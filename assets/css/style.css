@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 /*# sourceMappingURL=style.css.map */
@@ -40,6 +41,61 @@ main .localisation {
   text-align: center;
   padding: 0.5px; }
 
+/****page d'accueil desktop and tablet responsive****/
+/****header***/
+/**réservé**/
+@media screen and (min-width: 1065px) {
+  header {
+    position: unset; }
+
+  .Explorer {
+    padding-bottom: 30px; }
+    .Explorer h2 {
+      font-size: 40px;
+      margin-top: 0;
+      margin-bottom: 25px; }
+    .Explorer p {
+      font-weight: 200; }
+
+  .fonction {
+    margin: 0px 105px; }
+    .fonction h2 {
+      font-size: 24px; }
+    .fonction ol {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      gap: 18px; }
+    .fonction li {
+      padding: 25px 30px;
+      width: 33%;
+      position: relative; }
+      .fonction li::before {
+        position: absolute;
+        left: -8px; }
+
+  .menus {
+    padding-bottom: 30px; }
+    .menus h2 {
+      margin-left: 105px; }
+    .menus__cards {
+      margin: 0px 105px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    .menus .card {
+      width: 45%; }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; }
+    footer h3 {
+      margin: 0 50px; }
+    footer ul {
+      display: flex;
+      gap: 15px; } }
 .Explorer {
   text-align: center;
   padding-top: 20px;
@@ -116,10 +172,6 @@ main .localisation {
       border-radius: 5px;
       right: 12px;
       top: 12px; }
-    @media (min-width: 700px) {
-      .menus__cards {
-        display: flex;
-        flex-direction: column-reverse; } }
 
 .card {
   border-radius: 15px;
@@ -158,6 +210,61 @@ main .localisation {
         opacity: 1;
         transform: scale(1.2); }
 
+/****page d'accueil desktop and tablet responsive****/
+/****header***/
+/**réservé**/
+@media screen and (min-width: 1065px) {
+  header {
+    position: unset; }
+
+  .Explorer {
+    padding-bottom: 30px; }
+    .Explorer h2 {
+      font-size: 40px;
+      margin-top: 0;
+      margin-bottom: 25px; }
+    .Explorer p {
+      font-weight: 200; }
+
+  .fonction {
+    margin: 0px 105px; }
+    .fonction h2 {
+      font-size: 24px; }
+    .fonction ol {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      gap: 18px; }
+    .fonction li {
+      padding: 25px 30px;
+      width: 33%;
+      position: relative; }
+      .fonction li::before {
+        position: absolute;
+        left: -8px; }
+
+  .menus {
+    padding-bottom: 30px; }
+    .menus h2 {
+      margin-left: 105px; }
+    .menus__cards {
+      margin: 0px 105px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    .menus .card {
+      width: 45%; }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; }
+    footer h3 {
+      margin: 0 50px; }
+    footer ul {
+      display: flex;
+      gap: 15px; } }
 footer {
   background-color: #353535;
   color: white;
@@ -167,9 +274,6 @@ footer {
   display: flex;
   justify-content: flex-start;
   flex-direction: column; }
-  @media screen and (min-width: 500px) {
-    footer {
-      color: red; } }
   footer h3 {
     font-family: "Shrikhand",cursive; }
   footer ul {
@@ -229,5 +333,115 @@ footer {
     transition: all 0.5s; }
 
 /**utils**/
+/****page d'accueil desktop and tablet responsive****/
+/****header***/
+/**réservé**/
+@media screen and (min-width: 1065px) {
+  header {
+    position: unset; }
+
+  .Explorer {
+    padding-bottom: 30px; }
+    .Explorer h2 {
+      font-size: 40px;
+      margin-top: 0;
+      margin-bottom: 25px; }
+    .Explorer p {
+      font-weight: 200; }
+
+  .fonction {
+    margin: 0px 105px; }
+    .fonction h2 {
+      font-size: 24px; }
+    .fonction ol {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      gap: 18px; }
+    .fonction li {
+      padding: 25px 30px;
+      width: 33%;
+      position: relative; }
+      .fonction li::before {
+        position: absolute;
+        left: -8px; }
+
+  .menus {
+    padding-bottom: 30px; }
+    .menus h2 {
+      margin-left: 105px; }
+    .menus__cards {
+      margin: 0px 105px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    .menus .card {
+      width: 45%; }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; }
+    footer h3 {
+      margin: 0 50px; }
+    footer ul {
+      display: flex;
+      gap: 15px; } }
+/****page d'accueil desktop and tablet responsive****/
+/****header***/
+/**réservé**/
+@media screen and (min-width: 1065px) {
+  header {
+    position: unset; }
+
+  .Explorer {
+    padding-bottom: 30px; }
+    .Explorer h2 {
+      font-size: 40px;
+      margin-top: 0;
+      margin-bottom: 25px; }
+    .Explorer p {
+      font-weight: 200; }
+
+  .fonction {
+    margin: 0px 105px; }
+    .fonction h2 {
+      font-size: 24px; }
+    .fonction ol {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      gap: 18px; }
+    .fonction li {
+      padding: 25px 30px;
+      width: 33%;
+      position: relative; }
+      .fonction li::before {
+        position: absolute;
+        left: -8px; }
+
+  .menus {
+    padding-bottom: 30px; }
+    .menus h2 {
+      margin-left: 105px; }
+    .menus__cards {
+      margin: 0px 105px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    .menus .card {
+      width: 45%; }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; }
+    footer h3 {
+      margin: 0 50px; }
+    footer ul {
+      display: flex;
+      gap: 15px; } }
 
 /*# sourceMappingURL=style.css.map */

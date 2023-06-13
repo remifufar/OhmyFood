@@ -10,7 +10,7 @@ padding-left: 30px;
 display: flex;
 justify-content: flex-start;
 flex-direction: column;
- @include mobile-test;
+ @include tablet;
        & h3{
         font-family: "Shrikhand",cursive;
         
