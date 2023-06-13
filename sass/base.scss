@@ -3,14 +3,17 @@
 /*# sourceMappingURL=style.css.map */
  * {
 box-sizing: border-box;
+
  }
  h2 {
     font-size: 18px;
 }
  body
  {
-    margin: 0px;
+   max-width: 1440px;
+    margin: 0 auto;
     font-family: "roboto", sans-serif;
+    
 
  }
 main{
