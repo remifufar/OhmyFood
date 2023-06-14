@@ -14,6 +14,7 @@
         margin-top: -70px;
         padding-top: 0px;
         border-radius: 50px 50px 0 0;
+        row-gap: 20px;
         
         &__titre{
             display: flex;
@@ -25,9 +26,7 @@
         }
 
         &__entree{
-            margin-left: 17px;
-            
-            
+            margin-left: 17px; 
             h3{
             position: relative;
             padding-bottom: 30px;
@@ -40,9 +39,7 @@
                     left: 1px;
                     background-color: #99E2D0;
                 }
-
-            }
-            
+            }  
         }
 
 }
@@ -52,6 +49,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,.421) ;
     margin-right: 10px;
     overflow: hidden; 
+    margin-bottom: 20px;
     &:hover .carte__check{
                 margin-right: 0;
 
