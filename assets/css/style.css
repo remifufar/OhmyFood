@@ -445,7 +445,6 @@ footer i {
   margin-top: -70px;
   padding-top: 0px;
   border-radius: 50px 50px 0 0;
-  row-gap: 20px;
 }
 .menu__titre {
   display: flex;
@@ -457,10 +456,12 @@ footer i {
 }
 .menu__entree {
   margin-left: 17px;
+  margin-bottom: 50px;
 }
 .menu__entree h3 {
   position: relative;
   padding-bottom: 30px;
+  font-weight: 300;
 }
 .menu__entree h3::after {
   content: "";
@@ -488,12 +489,23 @@ footer i {
 }
 .carte__text {
   padding: 15px;
-  white-space: nowrap;
-  overflow: hidden;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
 }
 .carte__text h4 {
   font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.carte__text p {
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .carte__euro {
   display: flex;
