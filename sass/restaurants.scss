@@ -6,6 +6,8 @@
     object-position: center;
 }
 
+
+
 .menu{
         position: relative;
         background: white;
@@ -45,22 +47,57 @@
 
 }
 .carte{
-    border: 1px solid red;
     display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-        h4,p{
-            margin: 0px;
-        }
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.421) ;
+    margin-right: 10px;
+    overflow: hidden; 
+    &:hover .carte__check{
+                margin-right: 0;
 
+                &::after{
+                    transform:rotate(360deg)
+                }
+                
+             } 
+        &__text{
+            padding: 15px;
+            white-space: nowrap;
+             overflow: hidden;
+             margin: 0;
+             h4{
+                font-size: 20px;
+             }
+        }
+        &__euro{
+            display: flex;
+            align-items: end;
+            margin-left: auto;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            
+        }
         &__check{
             background-color: #99E2D0;
-            margin-right: -42px;
+            border-radius: 0 15px 15px 0;
+            width:65px;
+            position: relative;
+            margin-right: -69px;
+            transition: all 0.5s ease-in-out;
+            
+            &::after{
+            content: "";
+            font-family: "FontAwesome";
+            color: white;
+            font-size: 25px;
+            left: 20px;
+            top:23px;
+            position:absolute; 
+            transition: transform .4s ease-in-out;
+            
         }
 
-        &:hover &__check{
-
-            margin-right: 0;
-            transition: all 0.5s;
         }
 }

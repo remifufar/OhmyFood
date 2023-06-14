@@ -1,28 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
-/*# sourceMappingURL=style.css.map */
+
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 h2 {
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 body {
   max-width: 1440px;
   margin: 0 auto;
-  font-family: "roboto", sans-serif; }
+  font-family: "roboto", sans-serif;
+}
 
 main {
-  padding: 0px 0px; }
+  padding: 0px 0px;
+}
 
 ol, ul {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-h3, p {
-  margin: 0; }
+h3, h4, p {
+  margin: 0;
+}
 
 header {
   position: relative;
@@ -30,7 +37,8 @@ header {
   text-align: center;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.591);
   padding-top: 1px;
-  padding-bottom: 1px; }
+  padding-bottom: 1px;
+}
 
 main .localisation {
   display: flex;
@@ -39,146 +47,178 @@ main .localisation {
   gap: 15px;
   background-color: #eaeaea;
   text-align: center;
-  padding: 0.5px; }
+  padding: 0.5px;
+}
 
 /****page d'accueil desktop and tablet responsive****/
 @media screen and (min-width: 768px) {
   header {
-    position: unset; }
-
+    position: unset;
+  }
   .Explorer h2 {
-    font-size: 26px; }
-
+    font-size: 26px;
+  }
   .fonction h2 {
     text-align: center;
-    font-size: 20px; }
+    font-size: 20px;
+  }
   .fonction ol {
-    align-items: center; }
+    align-items: center;
+  }
   .fonction li {
     position: relative;
     padding: 20px 149px;
     gap: 10px;
     width: 80%;
-    text-align: center; }
-    .fonction li::before {
-      position: absolute;
-      left: -8px;
-      top: 18px; }
-
+    text-align: center;
+  }
+  .fonction li::before {
+    position: absolute;
+    left: -8px;
+    top: 18px;
+  }
   .menus {
-    padding-bottom: 35px; }
-    .menus h2 {
-      text-align: center; }
-    .menus__cards {
-      align-items: center; }
-    .menus .card {
-      width: 60%; }
-
+    padding-bottom: 35px;
+  }
+  .menus h2 {
+    text-align: center;
+  }
+  .menus__cards {
+    align-items: center;
+  }
+  .menus .card {
+    width: 60%;
+  }
   footer {
-    text-align: center; } }
+    text-align: center;
+  }
+}
 /****desktop**/
 @media screen and (min-width: 1065px) {
   header {
-    position: unset; }
-
+    position: unset;
+  }
   .Explorer {
-    padding-bottom: 30px; }
-    .Explorer h2 {
-      font-size: 40px;
-      margin-top: 0;
-      margin-bottom: 25px; }
-    .Explorer p {
-      font-weight: 200; }
-
+    padding-bottom: 30px;
+  }
+  .Explorer h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  .Explorer p {
+    font-weight: 200;
+  }
   .fonction {
-    margin: 0px 105px; }
-    .fonction h2 {
-      text-align: justify;
-      font-size: 24px; }
-    .fonction ol {
-      padding: 0;
-      display: flex;
-      flex-direction: row;
-      gap: 18px; }
-    .fonction li {
-      padding: 25px 30px;
-      width: 33%;
-      position: relative; }
-      .fonction li::before {
-        position: absolute;
-        left: -8px; }
-
+    margin: 0px 105px;
+  }
+  .fonction h2 {
+    text-align: justify;
+    font-size: 24px;
+  }
+  .fonction ol {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+  .fonction li {
+    padding: 25px 30px;
+    width: 33%;
+    position: relative;
+  }
+  .fonction li::before {
+    position: absolute;
+    left: -8px;
+  }
   .menus {
-    padding-bottom: 30px; }
-    .menus h2 {
-      margin-left: 105px; }
-    .menus__cards {
-      margin: 0px 105px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-    .menus .card {
-      width: 45%; }
-
+    padding-bottom: 30px;
+  }
+  .menus h2 {
+    margin-left: 105px;
+  }
+  .menus__cards {
+    margin: 0px 105px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .menus .card {
+    width: 45%;
+  }
   footer {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center; }
-    footer h3 {
-      margin: 0 50px; }
-    footer ul {
-      display: flex;
-      gap: 15px; } }
+    align-items: center;
+  }
+  footer h3 {
+    margin: 0 50px;
+  }
+  footer ul {
+    display: flex;
+    gap: 15px;
+  }
+}
 .Explorer {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 60px;
-  background-color: #f6f6f6; }
-  .Explorer--btn {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
-    background: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%);
-    border: none;
-    color: white;
-    padding: 15px 21px;
-    border-radius: 25px;
-    font-size: 16px;
-    margin-top: 25px;
-    transition: 1s; }
-  .Explorer--btn:hover {
-    box-shadow: 5px 5px 5px #000;
-    opacity: 0.7;
-    background: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%);
-    cursor: pointer; }
+  background-color: #f6f6f6;
+}
+.Explorer--btn {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+  background: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%);
+  border: none;
+  color: white;
+  padding: 15px 21px;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-top: 25px;
+  transition: 1s;
+}
+.Explorer--btn:hover {
+  box-shadow: 5px 5px 5px #000;
+  opacity: 0.7;
+  background: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%);
+  cursor: pointer;
+}
 
 .fonction {
   padding: 25px 15px;
-  counter-reset: numero; }
-  .fonction h2 {
-    margin-bottom: 30px; }
-  .fonction ol {
-    display: flex;
-    flex-direction: column;
-    row-gap: 25px;
-    padding-left: 15px;
-    position: relative; }
-  .fonction li {
-    background-color: #f6f6f6;
-    padding: 18px 27px;
-    border-radius: 15px; }
-    .fonction li::before {
-      content: counter(numero);
-      counter-increment: numero;
-      padding: 2px 7px;
-      border-radius: 12px;
-      color: white;
-      background-color: #9356DC;
-      position: absolute;
-      left: 5px; }
-    .fonction li:hover i {
-      color: #9356DC; }
-  .fonction i {
-    margin-right: 12px; }
+  counter-reset: numero;
+}
+.fonction h2 {
+  margin-bottom: 30px;
+}
+.fonction ol {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  padding-left: 15px;
+  position: relative;
+}
+.fonction li {
+  background-color: #f6f6f6;
+  padding: 18px 27px;
+  border-radius: 15px;
+}
+.fonction li::before {
+  content: counter(numero);
+  counter-increment: numero;
+  padding: 2px 7px;
+  border-radius: 12px;
+  color: white;
+  background-color: #9356DC;
+  position: absolute;
+  left: 5px;
+}
+.fonction li:hover i {
+  color: #9356DC;
+}
+.fonction i {
+  margin-right: 12px;
+}
 
 .menus {
   background-color: #f6f6f6;
@@ -186,153 +226,187 @@ main .localisation {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 65px;
-  padding-top: 20px; }
-  .menus h2 {
-    font-size: 24px;
-    margin-bottom: 25px; }
-  .menus__cards {
-    display: flex;
-    flex-direction: column;
-    gap: 30px; }
-    .menus__cards .new {
-      position: relative; }
-    .menus__cards .new::before {
-      content: "Nouveau";
-      position: absolute;
-      padding: 10px 15px;
-      background-color: #99e2d0;
-      color: #278870;
-      font-weight: 500;
-      border-radius: 5px;
-      right: 12px;
-      top: 12px; }
+  padding-top: 20px;
+}
+.menus h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.menus__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.menus__cards .new {
+  position: relative;
+}
+.menus__cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  padding: 10px 15px;
+  background-color: #99e2d0;
+  color: #278870;
+  font-weight: 500;
+  border-radius: 5px;
+  right: 12px;
+  top: 12px;
+}
 
 .card {
   border-radius: 15px;
-  box-shadow: 0px 1px 5px 0px #000; }
-  .card img {
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 180px; }
-  .card__description {
-    display: flex;
-    justify-content: space-between;
-    position: relative; }
-    .card__description__text h3 {
-      padding-left: 15px;
-      padding-top: 5px;
-      padding-bottom: 5px; }
-    .card__description__text p {
-      padding-left: 15px;
-      padding-bottom: 15px; }
-    .card__description i {
-      position: absolute;
-      font-size: 25px;
-      top: 8px;
-      right: 17px; }
-      .card__description i.coeur-2 {
-        opacity: 0;
-        background-clip: text;
-        -webkit-background-clip: text;
-        transition: 0.3s ease-in-out;
-        color: transparent;
-        background-image: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%); }
-      .card__description i.coeur-2:hover {
-        cursor: grab;
-        opacity: 1;
-        transform: scale(1.2); }
+  box-shadow: 0px 1px 5px 0px #000;
+}
+.card img {
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 180px;
+}
+.card__description {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.card__description__text h3 {
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.card__description__text p {
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+.card__description i {
+  position: absolute;
+  font-size: 25px;
+  top: 8px;
+  right: 17px;
+}
+.card__description i.coeur-2 {
+  opacity: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 0.3s ease-in-out;
+  color: transparent;
+  background-image: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%);
+}
+.card__description i.coeur-2:hover {
+  cursor: grab;
+  opacity: 1;
+  transform: scale(1.2);
+}
 
 /****page d'accueil desktop and tablet responsive****/
 @media screen and (min-width: 768px) {
   header {
-    position: unset; }
-
+    position: unset;
+  }
   .Explorer h2 {
-    font-size: 26px; }
-
+    font-size: 26px;
+  }
   .fonction h2 {
     text-align: center;
-    font-size: 20px; }
+    font-size: 20px;
+  }
   .fonction ol {
-    align-items: center; }
+    align-items: center;
+  }
   .fonction li {
     position: relative;
     padding: 20px 149px;
     gap: 10px;
     width: 80%;
-    text-align: center; }
-    .fonction li::before {
-      position: absolute;
-      left: -8px;
-      top: 18px; }
-
+    text-align: center;
+  }
+  .fonction li::before {
+    position: absolute;
+    left: -8px;
+    top: 18px;
+  }
   .menus {
-    padding-bottom: 35px; }
-    .menus h2 {
-      text-align: center; }
-    .menus__cards {
-      align-items: center; }
-    .menus .card {
-      width: 60%; }
-
+    padding-bottom: 35px;
+  }
+  .menus h2 {
+    text-align: center;
+  }
+  .menus__cards {
+    align-items: center;
+  }
+  .menus .card {
+    width: 60%;
+  }
   footer {
-    text-align: center; } }
+    text-align: center;
+  }
+}
 /****desktop**/
 @media screen and (min-width: 1065px) {
   header {
-    position: unset; }
-
+    position: unset;
+  }
   .Explorer {
-    padding-bottom: 30px; }
-    .Explorer h2 {
-      font-size: 40px;
-      margin-top: 0;
-      margin-bottom: 25px; }
-    .Explorer p {
-      font-weight: 200; }
-
+    padding-bottom: 30px;
+  }
+  .Explorer h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  .Explorer p {
+    font-weight: 200;
+  }
   .fonction {
-    margin: 0px 105px; }
-    .fonction h2 {
-      text-align: justify;
-      font-size: 24px; }
-    .fonction ol {
-      padding: 0;
-      display: flex;
-      flex-direction: row;
-      gap: 18px; }
-    .fonction li {
-      padding: 25px 30px;
-      width: 33%;
-      position: relative; }
-      .fonction li::before {
-        position: absolute;
-        left: -8px; }
-
+    margin: 0px 105px;
+  }
+  .fonction h2 {
+    text-align: justify;
+    font-size: 24px;
+  }
+  .fonction ol {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+  .fonction li {
+    padding: 25px 30px;
+    width: 33%;
+    position: relative;
+  }
+  .fonction li::before {
+    position: absolute;
+    left: -8px;
+  }
   .menus {
-    padding-bottom: 30px; }
-    .menus h2 {
-      margin-left: 105px; }
-    .menus__cards {
-      margin: 0px 105px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-    .menus .card {
-      width: 45%; }
-
+    padding-bottom: 30px;
+  }
+  .menus h2 {
+    margin-left: 105px;
+  }
+  .menus__cards {
+    margin: 0px 105px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .menus .card {
+    width: 45%;
+  }
   footer {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center; }
-    footer h3 {
-      margin: 0 50px; }
-    footer ul {
-      display: flex;
-      gap: 15px; } }
+    align-items: center;
+  }
+  footer h3 {
+    margin: 0 50px;
+  }
+  footer ul {
+    display: flex;
+    gap: 15px;
+  }
+}
 footer {
   background-color: #353535;
   color: white;
@@ -341,243 +415,332 @@ footer {
   padding-left: 30px;
   display: flex;
   justify-content: flex-start;
-  flex-direction: column; }
-  footer h3 {
-    font-family: "Shrikhand",cursive; }
-  footer ul {
-    padding: 0; }
-  footer li {
-    padding-bottom: 5px;
-    font-size: 16px; }
-  footer i {
-    margin-right: 5px; }
+  flex-direction: column;
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+footer i {
+  margin-right: 5px;
+}
 
 .banniere {
   width: 100%;
   max-height: 55vh;
   min-height: 25vh;
   object-fit: cover;
-  object-position: center; }
+  object-position: center;
+}
 
 .menu {
   position: relative;
   background: white;
   margin-top: -70px;
   padding-top: 0px;
-  border-radius: 50px 50px 0 0; }
-  .menu__titre {
-    display: flex;
-    justify-content: space-between;
-    padding: 35px 17px 0px 17px;
-    font-size: 28px;
-    font-family: "Shrikhand",cursive;
-    align-items: center; }
-  .menu__entree {
-    margin-left: 17px; }
-    .menu__entree h3 {
-      position: relative;
-      padding-bottom: 30px; }
-      .menu__entree h3::after {
-        content: "";
-        position: absolute;
-        height: 4px;
-        width: 50px;
-        top: 25px;
-        left: 1px;
-        background-color: #99E2D0; }
-
-.carte {
-  border: 1px solid red;
+  border-radius: 50px 50px 0 0;
+}
+.menu__titre {
   display: flex;
   justify-content: space-between;
-  overflow: hidden; }
-  .carte h4, .carte p {
-    margin: 0px; }
-  .carte__check {
-    background-color: #99E2D0;
-    margin-right: -42px; }
-  .carte:hover .carte__check {
-    margin-right: 0;
-    transition: all 0.5s; }
+  padding: 35px 17px 0px 17px;
+  font-size: 28px;
+  font-family: "Shrikhand", cursive;
+  align-items: center;
+}
+.menu__entree {
+  margin-left: 17px;
+}
+.menu__entree h3 {
+  position: relative;
+  padding-bottom: 30px;
+}
+.menu__entree h3::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 50px;
+  top: 25px;
+  left: 1px;
+  background-color: #99E2D0;
+}
+
+.carte {
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+  margin-right: 10px;
+  overflow: hidden;
+}
+.carte:hover .carte__check {
+  margin-right: 0;
+}
+.carte:hover .carte__check::after {
+  transform: rotate(360deg);
+}
+.carte__text {
+  padding: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+}
+.carte__text h4 {
+  font-size: 20px;
+}
+.carte__euro {
+  display: flex;
+  align-items: end;
+  margin-left: auto;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.carte__check {
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  width: 65px;
+  position: relative;
+  margin-right: -69px;
+  transition: all 0.5s ease-in-out;
+}
+.carte__check::after {
+  content: "\f058";
+  font-family: "FontAwesome";
+  color: white;
+  font-size: 25px;
+  left: 20px;
+  top: 23px;
+  position: absolute;
+  transition: transform 0.4s ease-in-out;
+}
 
 /**utils**/
 /****page d'accueil desktop and tablet responsive****/
 @media screen and (min-width: 768px) {
   header {
-    position: unset; }
-
+    position: unset;
+  }
   .Explorer h2 {
-    font-size: 26px; }
-
+    font-size: 26px;
+  }
   .fonction h2 {
     text-align: center;
-    font-size: 20px; }
+    font-size: 20px;
+  }
   .fonction ol {
-    align-items: center; }
+    align-items: center;
+  }
   .fonction li {
     position: relative;
     padding: 20px 149px;
     gap: 10px;
     width: 80%;
-    text-align: center; }
-    .fonction li::before {
-      position: absolute;
-      left: -8px;
-      top: 18px; }
-
+    text-align: center;
+  }
+  .fonction li::before {
+    position: absolute;
+    left: -8px;
+    top: 18px;
+  }
   .menus {
-    padding-bottom: 35px; }
-    .menus h2 {
-      text-align: center; }
-    .menus__cards {
-      align-items: center; }
-    .menus .card {
-      width: 60%; }
-
+    padding-bottom: 35px;
+  }
+  .menus h2 {
+    text-align: center;
+  }
+  .menus__cards {
+    align-items: center;
+  }
+  .menus .card {
+    width: 60%;
+  }
   footer {
-    text-align: center; } }
+    text-align: center;
+  }
+}
 /****desktop**/
 @media screen and (min-width: 1065px) {
   header {
-    position: unset; }
-
+    position: unset;
+  }
   .Explorer {
-    padding-bottom: 30px; }
-    .Explorer h2 {
-      font-size: 40px;
-      margin-top: 0;
-      margin-bottom: 25px; }
-    .Explorer p {
-      font-weight: 200; }
-
+    padding-bottom: 30px;
+  }
+  .Explorer h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  .Explorer p {
+    font-weight: 200;
+  }
   .fonction {
-    margin: 0px 105px; }
-    .fonction h2 {
-      text-align: justify;
-      font-size: 24px; }
-    .fonction ol {
-      padding: 0;
-      display: flex;
-      flex-direction: row;
-      gap: 18px; }
-    .fonction li {
-      padding: 25px 30px;
-      width: 33%;
-      position: relative; }
-      .fonction li::before {
-        position: absolute;
-        left: -8px; }
-
+    margin: 0px 105px;
+  }
+  .fonction h2 {
+    text-align: justify;
+    font-size: 24px;
+  }
+  .fonction ol {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+  .fonction li {
+    padding: 25px 30px;
+    width: 33%;
+    position: relative;
+  }
+  .fonction li::before {
+    position: absolute;
+    left: -8px;
+  }
   .menus {
-    padding-bottom: 30px; }
-    .menus h2 {
-      margin-left: 105px; }
-    .menus__cards {
-      margin: 0px 105px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-    .menus .card {
-      width: 45%; }
-
+    padding-bottom: 30px;
+  }
+  .menus h2 {
+    margin-left: 105px;
+  }
+  .menus__cards {
+    margin: 0px 105px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .menus .card {
+    width: 45%;
+  }
   footer {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center; }
-    footer h3 {
-      margin: 0 50px; }
-    footer ul {
-      display: flex;
-      gap: 15px; } }
+    align-items: center;
+  }
+  footer h3 {
+    margin: 0 50px;
+  }
+  footer ul {
+    display: flex;
+    gap: 15px;
+  }
+}
 /****page d'accueil desktop and tablet responsive****/
 @media screen and (min-width: 768px) {
   header {
-    position: unset; }
-
+    position: unset;
+  }
   .Explorer h2 {
-    font-size: 26px; }
-
+    font-size: 26px;
+  }
   .fonction h2 {
     text-align: center;
-    font-size: 20px; }
+    font-size: 20px;
+  }
   .fonction ol {
-    align-items: center; }
+    align-items: center;
+  }
   .fonction li {
     position: relative;
     padding: 20px 149px;
     gap: 10px;
     width: 80%;
-    text-align: center; }
-    .fonction li::before {
-      position: absolute;
-      left: -8px;
-      top: 18px; }
-
+    text-align: center;
+  }
+  .fonction li::before {
+    position: absolute;
+    left: -8px;
+    top: 18px;
+  }
   .menus {
-    padding-bottom: 35px; }
-    .menus h2 {
-      text-align: center; }
-    .menus__cards {
-      align-items: center; }
-    .menus .card {
-      width: 60%; }
-
+    padding-bottom: 35px;
+  }
+  .menus h2 {
+    text-align: center;
+  }
+  .menus__cards {
+    align-items: center;
+  }
+  .menus .card {
+    width: 60%;
+  }
   footer {
-    text-align: center; } }
+    text-align: center;
+  }
+}
 /****desktop**/
 @media screen and (min-width: 1065px) {
   header {
-    position: unset; }
-
+    position: unset;
+  }
   .Explorer {
-    padding-bottom: 30px; }
-    .Explorer h2 {
-      font-size: 40px;
-      margin-top: 0;
-      margin-bottom: 25px; }
-    .Explorer p {
-      font-weight: 200; }
-
+    padding-bottom: 30px;
+  }
+  .Explorer h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  .Explorer p {
+    font-weight: 200;
+  }
   .fonction {
-    margin: 0px 105px; }
-    .fonction h2 {
-      text-align: justify;
-      font-size: 24px; }
-    .fonction ol {
-      padding: 0;
-      display: flex;
-      flex-direction: row;
-      gap: 18px; }
-    .fonction li {
-      padding: 25px 30px;
-      width: 33%;
-      position: relative; }
-      .fonction li::before {
-        position: absolute;
-        left: -8px; }
-
+    margin: 0px 105px;
+  }
+  .fonction h2 {
+    text-align: justify;
+    font-size: 24px;
+  }
+  .fonction ol {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+  .fonction li {
+    padding: 25px 30px;
+    width: 33%;
+    position: relative;
+  }
+  .fonction li::before {
+    position: absolute;
+    left: -8px;
+  }
   .menus {
-    padding-bottom: 30px; }
-    .menus h2 {
-      margin-left: 105px; }
-    .menus__cards {
-      margin: 0px 105px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-    .menus .card {
-      width: 45%; }
-
+    padding-bottom: 30px;
+  }
+  .menus h2 {
+    margin-left: 105px;
+  }
+  .menus__cards {
+    margin: 0px 105px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .menus .card {
+    width: 45%;
+  }
   footer {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center; }
-    footer h3 {
-      margin: 0 50px; }
-    footer ul {
-      display: flex;
-      gap: 15px; } }
+    align-items: center;
+  }
+  footer h3 {
+    margin: 0 50px;
+  }
+  footer ul {
+    display: flex;
+    gap: 15px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
