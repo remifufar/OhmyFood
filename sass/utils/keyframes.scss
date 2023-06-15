@@ -1,0 +1,9 @@
+@keyframes myAnim {
+    0% {
+        transform: scaleX(0.4);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
