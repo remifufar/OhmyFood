@@ -27,6 +27,10 @@ a {
   text-decoration: none;
 }
 
+footer a {
+  color: white;
+}
+
 h3, h4, p {
   margin: 0;
 }
@@ -51,7 +55,7 @@ main .localisation {
 }
 
 /****page d'accueil desktop and tablet responsive****/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   header {
     position: unset;
   }
@@ -94,7 +98,7 @@ main .localisation {
   }
 }
 /****desktop**/
-@media screen and (min-width: 1065px) {
+@media screen and (min-width: 1024px) {
   header {
     position: unset;
   }
@@ -123,19 +127,22 @@ main .localisation {
     gap: 18px;
   }
   .fonction li {
-    padding: 25px 30px;
+    padding: 25px 22px;
     width: 33%;
     position: relative;
   }
   .fonction li::before {
     position: absolute;
     left: -8px;
+    top: 23px;
   }
   .menus {
     padding-bottom: 30px;
   }
   .menus h2 {
+    text-align: start;
     margin-left: 105px;
+    margin-bottom: 30px;
   }
   .menus__cards {
     margin: 0px 105px;
@@ -145,7 +152,7 @@ main .localisation {
     justify-content: space-between;
   }
   .menus .card {
-    width: 45%;
+    width: 47%;
   }
   footer {
     display: flex;
@@ -277,13 +284,13 @@ main .localisation {
   padding-left: 15px;
   padding-bottom: 15px;
 }
-.card__description i {
+.card__description__coeur i {
   position: absolute;
   font-size: 25px;
   top: 8px;
-  right: 17px;
+  right: 18px;
 }
-.card__description i.coeur-2 {
+.card__description__coeur i.coeur-2 {
   opacity: 0;
   background-clip: text;
   -webkit-background-clip: text;
@@ -291,14 +298,14 @@ main .localisation {
   color: transparent;
   background-image: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%);
 }
-.card__description i.coeur-2:hover {
+.card__description__coeur i.coeur-2:hover {
   cursor: grab;
   opacity: 1;
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 /****page d'accueil desktop and tablet responsive****/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   header {
     position: unset;
   }
@@ -341,7 +348,7 @@ main .localisation {
   }
 }
 /****desktop**/
-@media screen and (min-width: 1065px) {
+@media screen and (min-width: 1024px) {
   header {
     position: unset;
   }
@@ -370,19 +377,22 @@ main .localisation {
     gap: 18px;
   }
   .fonction li {
-    padding: 25px 30px;
+    padding: 25px 22px;
     width: 33%;
     position: relative;
   }
   .fonction li::before {
     position: absolute;
     left: -8px;
+    top: 23px;
   }
   .menus {
     padding-bottom: 30px;
   }
   .menus h2 {
+    text-align: start;
     margin-left: 105px;
+    margin-bottom: 30px;
   }
   .menus__cards {
     margin: 0px 105px;
@@ -392,7 +402,7 @@ main .localisation {
     justify-content: space-between;
   }
   .menus .card {
-    width: 45%;
+    width: 47%;
   }
   footer {
     display: flex;
@@ -431,6 +441,14 @@ footer i {
   margin-right: 5px;
 }
 
+@keyframes myAnim {
+  0% {
+    transform: scaleX(0.4);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 .banniere {
   width: 100%;
   max-height: 55vh;
@@ -439,12 +457,52 @@ footer i {
   object-position: center;
 }
 
+header {
+  width: 100%;
+  position: relative;
+}
+header a {
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  font-size: 25px;
+  top: 30px;
+  left: 20px;
+}
+
 .menu {
   position: relative;
   background: white;
   margin-top: -70px;
   padding-top: 0px;
   border-radius: 50px 50px 0 0;
+  background-color: #F6F6F6;
+}
+.menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.menu__coeur {
+  margin-top: 30px;
+}
+.menu__coeur .coeur-1 {
+  font-size: 25px;
+}
+.menu__coeur .coeur-1:hover::before {
+  content: "\f004";
+  font-family: "FontAwesome";
+  color: transparent;
+  background-image: linear-gradient(179deg, #9356DC 20%, #FF79DA 100%);
+  font-size: 25px;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.menu__coeur .coeur-1:hover::before.coeur-1:hover {
+  opacity: 0;
 }
 .menu__titre {
   display: flex;
@@ -535,9 +593,45 @@ footer i {
   transition: transform 0.4s ease-in-out;
 }
 
+.commande {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+  padding-bottom: 40px;
+}
+.commande__btn {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+  background: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%);
+  border: none;
+  color: white;
+  padding: 16px 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-top: 25px;
+  transition: 1s;
+}
+.commande__btn:hover {
+  box-shadow: 5px 5px 5px #000;
+  opacity: 0.7;
+  background: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%);
+  cursor: pointer;
+}
+
+.animation-1 {
+  animation: myAnim 2s ease 0s 1 normal none;
+}
+
+.animation-2 {
+  animation: myAnim 3s ease 0s 1 normal none;
+}
+
+.animation-3 {
+  animation: myAnim 4s ease 0s 1 normal none;
+}
+
 /**utils**/
 /****page d'accueil desktop and tablet responsive****/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   header {
     position: unset;
   }
@@ -580,7 +674,7 @@ footer i {
   }
 }
 /****desktop**/
-@media screen and (min-width: 1065px) {
+@media screen and (min-width: 1024px) {
   header {
     position: unset;
   }
@@ -609,19 +703,22 @@ footer i {
     gap: 18px;
   }
   .fonction li {
-    padding: 25px 30px;
+    padding: 25px 22px;
     width: 33%;
     position: relative;
   }
   .fonction li::before {
     position: absolute;
     left: -8px;
+    top: 23px;
   }
   .menus {
     padding-bottom: 30px;
   }
   .menus h2 {
+    text-align: start;
     margin-left: 105px;
+    margin-bottom: 30px;
   }
   .menus__cards {
     margin: 0px 105px;
@@ -631,7 +728,7 @@ footer i {
     justify-content: space-between;
   }
   .menus .card {
-    width: 45%;
+    width: 47%;
   }
   footer {
     display: flex;
@@ -647,7 +744,7 @@ footer i {
   }
 }
 /****page d'accueil desktop and tablet responsive****/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   header {
     position: unset;
   }
@@ -690,7 +787,7 @@ footer i {
   }
 }
 /****desktop**/
-@media screen and (min-width: 1065px) {
+@media screen and (min-width: 1024px) {
   header {
     position: unset;
   }
@@ -719,19 +816,22 @@ footer i {
     gap: 18px;
   }
   .fonction li {
-    padding: 25px 30px;
+    padding: 25px 22px;
     width: 33%;
     position: relative;
   }
   .fonction li::before {
     position: absolute;
     left: -8px;
+    top: 23px;
   }
   .menus {
     padding-bottom: 30px;
   }
   .menus h2 {
+    text-align: start;
     margin-left: 105px;
+    margin-bottom: 30px;
   }
   .menus__cards {
     margin: 0px 105px;
@@ -741,7 +841,7 @@ footer i {
     justify-content: space-between;
   }
   .menus .card {
-    width: 45%;
+    width: 47%;
   }
   footer {
     display: flex;
@@ -754,6 +854,46 @@ footer i {
   footer ul {
     display: flex;
     gap: 15px;
+  }
+}
+/****page restaurants desktop and tablet responsive****/
+@media screen and (min-width: 767px) {
+  .main {
+    width: 80%;
+    margin: auto;
+  }
+  .menu {
+    padding-bottom: 5px;
+  }
+  .menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .menu__coeur {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    padding-bottom: 5px;
+  }
+  .menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .menu__coeur {
+    margin-top: 30px;
+  }
+  .menu__entree__categories {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 25px;
   }
 }
 

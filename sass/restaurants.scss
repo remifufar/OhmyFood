@@ -1,3 +1,6 @@
+@import "./utils/bouton.scss";
+@import "./utils/keyframes.scss";
+
 .banniere{
     width: 100%;
     max-height: 55vh;
@@ -6,7 +9,18 @@
     object-position: center;
 }
 
-
+header{
+    width: 100%;
+    position: relative;
+    & a{
+        color: black;
+        text-decoration: none;
+        position: absolute;
+        font-size: 25px;
+        top: 30px;
+        left: 20px;
+    }
+}
 
 .menu{
         position: relative;
@@ -14,8 +28,22 @@
         margin-top: -70px;
         padding-top: 0px;
         border-radius: 50px 50px 0 0;
-        
-        
+        background-color: #F6F6F6;
+        &__header{
+            display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+
+        }
+        &__coeur{
+                @include coeur-animation-2;
+                margin-top: 30px;
+        }
         &__titre{
             display: flex;
             justify-content: space-between;
@@ -23,7 +51,8 @@
             font-size: 28px;
             font-family:"Shrikhand",cursive;
             align-items: center;
-            
+        
+        
         }
 
         &__entree{
@@ -116,3 +145,23 @@
         }
 }
 
+.commande{
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    padding-bottom: 40px;
+    &__btn{
+    @include bouton-2
+    
+    }
+}
+
+.animation-1{
+    animation: myAnim 2s ease 0s 1 normal none;
+}
+.animation-2{
+    animation: myAnim 3s ease 0s 1 normal none;
+}
+.animation-3{
+    animation: myAnim 4s ease 0s 1 normal none;
+}
