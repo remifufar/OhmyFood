@@ -25,6 +25,7 @@ ol, ul {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 footer a {
@@ -483,8 +484,15 @@ header a {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 0px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+.menu__header h2 {
+  font-size: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__coeur {
   margin-top: 30px;
@@ -554,13 +562,15 @@ header a {
   flex: 1;
 }
 .carte__text h4 {
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: 600;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-bottom: 3px;
 }
 .carte__text p {
-  font-size: 15px;
+  font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
