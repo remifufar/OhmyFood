@@ -1,0 +1,71 @@
+$breakpoints:
+(
+    "tablet": 767px,
+    "desktop": 1024px,
+);
+
+@mixin tablet 
+{
+    @media screen and (min-width: map-get($breakpoints, "tablet")) {
+        @content;
+    }
+}
+
+@mixin desktop
+{
+    @media screen and (min-width: map-get($breakpoints, "desktop")) {
+        @content;
+    } 
+}
+
+/****page restaurants desktop and tablet responsive****///
+@include tablet{
+
+    .main{
+
+        width: 80%;
+        margin: auto;
+    }
+
+    .menu{
+        padding-bottom: 5px;
+        
+        &__header{
+            display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+        }
+       
+        &__coeur{
+            margin-top: 30px;
+        }
+}
+}
+@include desktop{
+
+.menu{
+    padding-bottom: 5px;
+    
+    &__header{
+        display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+    }
+   
+    &__coeur{
+        margin-top: 30px;
+    }
+}
+.menu__entree__categories{
+width: 70%;
+margin: auto;
+margin-bottom: 25px;
+
+}
+
+
+}
