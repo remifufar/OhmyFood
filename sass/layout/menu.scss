@@ -1,3 +1,5 @@
+@import "../utils/coeur.scss";
+
 .menus{
     background-color: #f6f6f6;
     margin: 0%;
@@ -64,30 +66,8 @@
 
             }
           }
-          & i{
-            position: absolute;
-            font-size: 25px;
-            top: 8px;
-            right: 17px;
-            &.coeur-2{
-                opacity: 0;
-                background-clip: text;
-                -webkit-background-clip: text;
-                transition: 0.3s ease-in-out;
-                color: transparent;
-                background-image: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%);
-                
+          &__coeur{
+          @include coeur-animation
             }
-
-            &.coeur-2:hover{
-                cursor:grab;
-                opacity: 1;
-                transform: scale(1.2) ;
-                
-            }
-
-          }
-          
-
-    }
+        }
     }

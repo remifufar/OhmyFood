@@ -1,7 +1,7 @@
 $breakpoints:
 (
-    "tablet": 768px,
-    "desktop": 1065px,
+    "tablet": 767px,
+    "desktop": 1024px,
 );
 
 @mixin tablet 
@@ -124,12 +124,13 @@ footer{
         gap: 18px;
     }
     li{
-        padding: 25px 30px;
+        padding: 25px 22px;
         width: 33%;
         position: relative;
         &::before{
             position: absolute;
             left:-8px;
+            top: 23px;
 
         }
         
@@ -140,7 +141,9 @@ footer{
 .menus{
         padding-bottom: 30px;
     h2{
+        text-align: start;
         margin-left: 105px;
+        margin-bottom: 30px;
     }
     &__cards{
         margin: 0px 105px;
@@ -151,7 +154,7 @@ footer{
     }
 
     .card{
-        width: 45%;
+        width: 47%;
 
     }
 
