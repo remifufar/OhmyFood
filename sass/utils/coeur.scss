@@ -1,0 +1,47 @@
+@mixin coeur-animation{
+    i{
+        position: absolute;
+        font-size: 25px;
+        top: 8px;
+        right: 18px;
+        &.coeur-2{
+            opacity: 0;
+            background-clip: text;
+            -webkit-background-clip: text;
+            transition: 0.3s ease-in-out;
+            color: transparent;
+            background-image: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%);
+            
+        }
+
+        &.coeur-2:hover{
+            cursor:grab;
+            opacity: 1;
+            transform: scale(1.0) ;
+            
+        }
+
+      }
+}
+
+@mixin coeur-animation-2{
+    .coeur-1{
+        font-size: 25px; 
+    }
+
+.coeur-1:hover::before{
+    content:"";
+    font-family:"FontAwesome";
+    color: transparent;
+    background-image: linear-gradient(179deg, #9356DC 20%, #FF79DA 100%);
+    font-size: 25px;
+    background-clip: text;
+    -webkit-background-clip: text;
+ 
+
+    
+    &.coeur-1:hover{
+        opacity: 0;
+    }
+}
+}
