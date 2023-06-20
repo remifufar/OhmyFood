@@ -37,12 +37,16 @@ h3, h4, p {
 }
 
 header {
-  position: relative;
-  font-family: "Shrikhand", cursive;
   text-align: center;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.591);
   padding-top: 1px;
   padding-bottom: 1px;
+}
+header img {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  width: 150px;
+  height: 30px;
 }
 
 main .localisation {
@@ -53,6 +57,8 @@ main .localisation {
   background-color: #eaeaea;
   text-align: center;
   padding: 0.5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /****page d'accueil desktop and tablet responsive****/
@@ -196,7 +202,7 @@ main .localisation {
   padding: 25px 15px;
   counter-reset: numero;
 }
-.fonction h2 {
+.fonction h1 {
   margin-bottom: 30px;
 }
 .fonction ol {
@@ -450,6 +456,7 @@ footer i {
     transform: scaleX(1);
   }
 }
+/**loader**/
 .banniere {
   width: 100%;
   max-height: 55vh;
@@ -462,12 +469,12 @@ header {
   width: 100%;
   position: relative;
 }
-header a {
+header i {
   color: black;
   text-decoration: none;
   position: absolute;
   font-size: 25px;
-  top: 30px;
+  top: 24px;
   left: 20px;
 }
 
@@ -524,12 +531,12 @@ header a {
   margin-left: 17px;
   margin-bottom: 50px;
 }
-.menu__entree h3 {
+.menu__entree h2 {
   position: relative;
   padding-bottom: 30px;
   font-weight: 300;
 }
-.menu__entree h3::after {
+.menu__entree h2::after {
   content: "";
   position: absolute;
   height: 4px;
@@ -561,7 +568,7 @@ header a {
   white-space: nowrap;
   flex: 1;
 }
-.carte__text h4 {
+.carte__text h3 {
   font-size: 17px;
   font-weight: 600;
   overflow: hidden;
@@ -868,6 +875,14 @@ header a {
 }
 /****page restaurants desktop and tablet responsive****/
 @media screen and (min-width: 767px) {
+  header {
+    position: relative;
+  }
+  header i {
+    position: absolute;
+    top: 23px;
+    left: 20px;
+  }
   .main {
     width: 80%;
     margin: auto;
