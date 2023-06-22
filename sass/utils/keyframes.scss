@@ -1,10 +1,39 @@
-@keyframes myAnim {
-    0% {
-        transform: scaleX(0.4);
-    }
 
-    100% {
-        transform: scaleX(1);
-    }
-}
 /**loader**/
+@keyframes animloader {
+    0% {
+      box-shadow: 0 0  inset;
+    }
+    100% {
+      box-shadow: 0 -70px inset;
+    }
+  }
+  @keyframes fill {
+    0% { box-shadow: 0 0  inset }
+    50% , 100% { box-shadow: 0 -98px inset }
+  }
+
+
+  @keyframes fillNeck {
+    0% , 50%{ box-shadow: 0 0  inset }
+    100% { box-shadow: 0 -20px inset }
+  }
+  @keyframes opac{
+    0% {
+        opacity: 1;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+
+    }
+  }

@@ -12,7 +12,7 @@
         row-gap: 25px;
         padding-left: 15px;
         position: relative;
-
+        
     }
     & li{
         &::before{
@@ -28,7 +28,7 @@
         }
         background-color: #f6f6f6;
         padding: 18px 27px;
-    
+        box-shadow: 0px 1px 5px 0px #000;
         &:hover{
         
         & i {
