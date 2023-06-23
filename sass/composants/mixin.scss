@@ -1,0 +1,7 @@
+@mixin shadow{
+    box-shadow: 0px 1px 5px 0px #c3c4c7;}
+
+@mixin background-degrader{
+
+    background: linear-gradient(179deg, #9356DC 0%, #FF79DA 100%)
+}
