@@ -1,3 +1,5 @@
+@import "../composants/mixin.scss";
+
 .fonction{
         padding: 25px 15px;
         counter-reset: numero;
@@ -28,7 +30,8 @@
         }
         background-color: #f6f6f6;
         padding: 18px 27px;
-        box-shadow: 0px 1px 5px 0px #000;
+        @include shadow;
+
         &:hover{
         
         & i {
