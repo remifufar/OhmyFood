@@ -18,6 +18,12 @@ $breakpoints:
     } 
 }
 
+.menu-coeur{
+
+   & i{
+    right: 500px;}
+}
+
 /****page restaurants desktop and tablet responsive****///
 @include tablet{
 header{
